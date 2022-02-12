@@ -655,6 +655,58 @@ a {
   margin-top: 0px;
   margin-bottom: 9px;
 }
+.footer-follow{
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1,14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+.footer-distribution{
+  margin-left: 93px;
+}
+.footer-boarder {
+  min-width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.footer-email {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1, 25;
+  margin-left: 16px;
+}
+.button-follow{
+  min-width: 200px;
+  height: 50px;
+
+  margin-left: 12px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1,87;
+  letter-spacing: 0.06em;
+  
+  color: #ffffff;
+  background-color: #2196F3;
+  border: transparent;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-follow:hover,
+.button-follow:focus{
+  background-color: #188ce8;
+}
+.follow-img{
+  margin-left: 10px;
+}
+
+.flex{
+  display: flex;
+}
 /* Button */
 .button {
   display: inline-block;
