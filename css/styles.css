@@ -656,6 +656,11 @@ a {
   margin-bottom: 9px;
 }
 .footer-follow{
+  position: absolute;
+  left: 0;
+  top: -50px;
+  
+
   font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
@@ -665,21 +670,29 @@ a {
 
   color: #FFFFFF;
 }
+.form{
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .footer-distribution{
+  
   margin-left: 93px;
+  position: relative;
 }
 .footer-boarder {
   min-width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  background-color: transparent;
+  height: 50px;
 }
 .footer-email {
-  font-family: Roboto;
   font-size: 16px;
   line-height: 1, 25;
   margin-left: 16px;
 }
 .button-follow{
+  position: relative;
   min-width: 200px;
   height: 50px;
 
@@ -703,6 +716,11 @@ a {
 .follow-img{
   margin-left: 10px;
 }
+.svg-footer{
+  position: absolute;
+  fill: #FFFFFF;
+}
+
 
 .flex{
   display: flex;
@@ -821,7 +839,7 @@ a {
 
 .is-hidden{
   visibility: hidden;
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
 }
 
@@ -859,5 +877,87 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* Форма модального окна */
+.modal-hero{
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1,15;
+  text-align: center;
+  letter-spacing: 0.03em;
 
+  color: #212121;
+}
 
+.modal-form{
+  padding: 40px;
+}
+
+textarea{
+  resize: none;
+}
+
+.form-field{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.form-input{
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-field:focus .form-input{
+  border: 1px solid #2196F3;
+}
+.comment{
+  height: 120px;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.name{
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1,16;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+.svg-modal{
+  position: absolute;
+
+  left: 15px;
+  bottom: 14px;
+
+  fill: #212121;
+}
+
+.form-input:focus .svg-modal {
+  fill: #188ce8;
+}
+.terms{
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+.checkbox-input{
+  display: block;
+}
+
+.btn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
