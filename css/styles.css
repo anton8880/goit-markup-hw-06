@@ -949,9 +949,19 @@ textarea{
 
   color: #757575;
 }
+.terms-link{
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+
+  text-decoration: solid;
+  color: #2196F3;
+  
+}
 .checkbox-input{
   display: block;
 }
+.
 
 .btn{
   display: block;
