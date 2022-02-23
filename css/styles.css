@@ -717,6 +717,8 @@ a {
   margin-left: 10px;
 }
 .svg-footer{
+  
+  left: 3px;
   position: absolute;
   fill: #FFFFFF;
 }
@@ -839,7 +841,7 @@ a {
 
 .is-hidden{
   visibility: hidden;
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
 }
 
@@ -873,8 +875,9 @@ a {
   background-color: transparent;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+.close:hover .close-buttton {
+  fill: #188ce8;
+  
 }
 
 /* Форма модального окна */
@@ -950,11 +953,12 @@ textarea{
   color: #757575;
 }
 .terms-link{
+  margin-left: 5px;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
 
-  text-decoration: solid;
+  text-decoration: underline;
   color: #2196F3;
   
 }
