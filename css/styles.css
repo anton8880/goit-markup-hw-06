@@ -599,11 +599,12 @@ a {
 .clients-logo {
   display: block;
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-image:hover .clients-logo{
+.clients-link:hover .clients-logo{
   fill: var(--accent-text-color);
 }
-.clients-image:focus .clients-logo{
+.clients-link:focus .clients-logo{
   fill: var(--accent-text-color);
 }
 /* Footer */
@@ -660,8 +661,6 @@ a {
   left: 0;
   top: -50px;
   
-
-  font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
   line-height: 1,14;
@@ -697,13 +696,8 @@ a {
   height: 50px;
 
   margin-left: 12px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1,87;
-  letter-spacing: 0.06em;
   
-  color: #ffffff;
+
   background-color: #2196F3;
   border: transparent;
   border-radius: 4px;
@@ -713,17 +707,47 @@ a {
 .button-follow:focus{
   background-color: #188ce8;
 }
+
+.button-text{
+position: absolute;
+left: 29px;
+top: 0px;
+
+font-weight: bold;
+font-size: 16px;
+line-height: 1,87;
+letter-spacing: 0.06em;
+
+color: #ffffff;
+}
+
 .follow-img{
   margin-left: 10px;
 }
 .svg-footer{
-  
-  left: 3px;
+  bottom: 13px;
+  top: 13px;
+  right: 28px;
   position: absolute;
   fill: #FFFFFF;
 }
 
+.button-follow.btn{
+  background-color: #2196F3;
+  border: transparent;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1,87;
+  letter-spacing: 0.06em;
 
+  color: #ffffff;
+}
+.button-follow.btn:hover,
+.button-follow.btn:focus{
+  background-color: #188ce8;
+}
 .flex{
   display: flex;
 }
@@ -877,8 +901,7 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close:hover .close-buttton {
-  fill: #188ce8;
-  
+  color: #2196F3;
 }
 
 /* Форма модального окна */
@@ -907,6 +930,7 @@ textarea{
   display: flex;
   flex-direction: column;
   margin-bottom: 28px;
+  
 }
 
 .form-input{
@@ -916,9 +940,21 @@ textarea{
   border-radius: 4px;
   padding-left: 42px;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field:focus .form-input{
+.form-field:hover .form-input{
   border: 1px solid #2196F3;
+}
+.form-field:focus .form-input {
+  border: 1px solid #2196F3;
+}
+
+.form-field:hover .svg-modal {
+  fill:#2196F3;
+}
+
+.form-field:focus .svg-modal {
+  fill: #2196F3;
 }
 .comment{
   height: 120px;
@@ -943,6 +979,8 @@ textarea{
   bottom: 14px;
 
   fill: #212121;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus .svg-modal {
