@@ -900,10 +900,16 @@ color: #ffffff;
   background-color: transparent;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close:hover .close-buttton {
-  color: #2196F3;
-}
 
+.close-icon{
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close:hover .close-icon{
+  fill:#2196F3;
+}
+.close:focus .close-icon{
+  fill: #2196F3;
+}
 /* Форма модального окна */
 .modal-hero{
   margin-top: 0;
@@ -1006,6 +1012,29 @@ textarea{
 .checkbox-input{
   display: block;
 }
+.checkbox-icon{
+  position: absolute;
+  
+  background-color: #fff;
+  fill: none;
+
+  top: 478px;
+  bottom: 124px;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid #212121;
+
+  border-radius: 2px;
+}
+.checkbox-icon:checked{
+  background-color: #2196f3;
+  fill: #FFFFFF;
+
+  border: transparent;
+}
+
+
 
 .btn{
   display: block;
