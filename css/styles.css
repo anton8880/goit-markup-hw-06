@@ -967,7 +967,6 @@ textarea{
 }
 .name{
   margin-bottom: 4px;
-
   font-size: 12px;
   line-height: 1,16;
   letter-spacing: 0.01em;
@@ -989,9 +988,12 @@ textarea{
   fill: #188ce8;
 }
 .terms{
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
+  margin-top: 20px;
 
   color: #757575;
 }
@@ -1005,23 +1007,26 @@ textarea{
   color: #2196F3;
   
 }
+.checkbox-hidden{
+  visibility: hidden;
+}
+.checkbox-hidden:checked + .custom-checkbox{
+  border: transparent;
+  background-size: contain;
+  box-sizing: border-box;
+  background-image: url(../images/icon\ check-2.svg);
+}
 .checkbox-input{
   display: block;
 }
-.checkbox-icon{
-  position: absolute;
-  
-  background-color: #fff;
-  fill: none;
 
-  top: 478px;
-  bottom: 124px;
+.custom-checkbox{
   width: 16px;
   height: 15px;
-
+  content: '';
   border: 2px solid #212121;
-
   border-radius: 2px;
+  margin-right: 8px;
 }
 .checkbox-icon:checked{
   background-color: #2196f3;
