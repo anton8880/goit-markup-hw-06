@@ -663,18 +663,21 @@ a {
 .form{
   margin-top: auto;
   margin-bottom: auto;
-}
-.footer-distribution{
-  
   margin-left: 93px;
-  position: relative;
 }
-.footer-boarder {
+
+.footer-border {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   min-width: 358px;
+  
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background-color: transparent;
   height: 50px;
+
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-email {
   font-size: 16px;
