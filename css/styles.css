@@ -648,10 +648,11 @@ a {
   margin-bottom: 9px;
 }
 .footer-follow{
-  position: absolute;
-  left: 0;
-  top: -50px;
-  
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 93px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1,14;
@@ -660,7 +661,11 @@ a {
 
   color: #FFFFFF;
 }
+.form-container{
+  width: 570px;
+}
 .form{
+  display: flex;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 93px;
@@ -969,6 +974,7 @@ textarea{
   box-sizing: border-box;
   border-radius: 4px;
 
+  outline: none;
 
   font-weight: 400;
   font-size: 14px;
