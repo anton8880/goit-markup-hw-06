@@ -648,11 +648,10 @@ a {
   margin-bottom: 9px;
 }
 .footer-follow{
-  display: flex;
+  display: block;
   margin-top: 0px;
   margin-bottom: 20px;
-  margin-left: 93px;
-
+  
   font-weight: bold;
   font-size: 14px;
   line-height: 1,14;
@@ -662,13 +661,10 @@ a {
   color: #FFFFFF;
 }
 .form-container{
-  width: 570px;
+  margin-left: 93px;
 }
 .form{
   display: flex;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 93px;
 }
 
 .footer-border {
